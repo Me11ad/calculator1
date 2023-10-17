@@ -18,8 +18,8 @@ public class Requestor{
 
 public class Programm{
     static void Main(string[] args){
-        Calc calc = new Calc();
-        Requestor req = new Requestor(calc);
+        Calc calc = new();
+        Requestor req = new(calc);
     }
 }
 
