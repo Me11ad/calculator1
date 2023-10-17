@@ -4,39 +4,7 @@ public class Calc{
         return x + y;
     }
 
-    public int Min(int x, int y){
-        return x - y;
-    }
-
-    public int Div(int x, int y){
-        return x / y;
-    }
-
-    public int Mult(int x, int y){
-        return x * y;
-    }
-
-    internal static void Sum()
-    {
-        throw new NotImplementedException();
-    }
-
-    internal static void Min()
-    {
-        throw new NotImplementedException();
-    }
-
-    internal static void Div()
-    {
-        throw new NotImplementedException();
-    }
-
-    internal static void Mult()
-    {
-        throw new NotImplementedException();
-    }
 }
-
 public class Requestor{
     Calc calc;
 
@@ -45,28 +13,16 @@ public class Requestor{
     }
 
     static void Req(){
-        if(true){
-            Calc.Sum();
-        }
-        if(true){
-            Calc.Min();
-        }
-        if(true){
-            Calc.Div();
-        }
-        if(true){
-            Calc.Mult();
-        }
-    }
+    }  
 }
 
 public class Programm{
     static void Main(string[] args){
         Calc calc = new Calc();
         Requestor req = new Requestor(calc);
+    }
+}
 
-        // сhar again = 'y';
-        // while(again == 'y'){
         // double a;
         // double b;
         // double result;
@@ -83,19 +39,19 @@ public class Programm{
 
         // if (operat == '+'){
         //     result = a + b;
-        //     Console.WriteLine("Сумма = "+ result +);
+        //     Console.WriteLine("Сумма = "+ result);
         // }
         // else if (operat == '-'){
         //     result = a - b;
-        //     Console.WriteLine("Разность = "+ result +);
+        //     Console.WriteLine("Разность = "+ result);
         // }
         // else if(operat == '*'){
         //     result = a * b;
-        //     Console.WriteLine("Умножение = "+ result +);
+        //     Console.WriteLine("Умножение = "+ result);
         // }
         // else if(operat == '/'){
         //     result = a / b;
-        //     Console.WriteLine("Деление = "+ result +); 
+        //     Console.WriteLine("Деление = "+ result); 
         // }
         // else{
         //     Console.WriteLine("Неизвестный оператор");
@@ -103,6 +59,3 @@ public class Programm{
         // Console.WriteLine("Продолжить? (y/n)");
         // again = Convert.toChar(Console.ReadLine());
         // }
-
-    }
-}

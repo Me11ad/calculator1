@@ -1,0 +1,5 @@
+/home/user/MV/bin/Calculator/obj/Debug/net6.0/Calculator.csproj.AssemblyReference.cache
+/home/user/MV/bin/Calculator/obj/Debug/net6.0/Calculator.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/MV/bin/Calculator/obj/Debug/net6.0/Calculator.AssemblyInfoInputs.cache
+/home/user/MV/bin/Calculator/obj/Debug/net6.0/Calculator.AssemblyInfo.cs
+/home/user/MV/bin/Calculator/obj/Debug/net6.0/Calculator.csproj.CoreCompileInputs.cache
