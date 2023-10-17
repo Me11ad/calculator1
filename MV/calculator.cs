@@ -15,6 +15,26 @@ public class Calc{
     public int Mult(int x, int y){
         return x * y;
     }
+
+    internal static void Sum()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal static void Min()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal static void Div()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal static void Mult()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public class Requestor{
@@ -40,50 +60,49 @@ public class Requestor{
     }
 }
 
-public class Program{
+public class Programm{
     static void Main(string[] args){
         Calc calc = new Calc();
         Requestor req = new Requestor(calc);
+
+        // сhar again = 'y';
+        // while(again == 'y'){
+        // double a;
+        // double b;
+        // double result;
+        // char operat;
+
+        // Console.WriteLine("Введите первое число");
+        // a = Convert.ToDouble(Console.ReadLine());
+
+        // Console.WriteLine("Введите оператор");
+        // operat = Convert.ToChar(Console.ReadLine());
+
+        // Console.WriteLine("Введите второе число");
+        // b = Convert.ToDouble(Console.ReadLine());
+
+        // if (operat == '+'){
+        //     result = a + b;
+        //     Console.WriteLine("Сумма = "+ result +);
+        // }
+        // else if (operat == '-'){
+        //     result = a - b;
+        //     Console.WriteLine("Разность = "+ result +);
+        // }
+        // else if(operat == '*'){
+        //     result = a * b;
+        //     Console.WriteLine("Умножение = "+ result +);
+        // }
+        // else if(operat == '/'){
+        //     result = a / b;
+        //     Console.WriteLine("Деление = "+ result +); 
+        // }
+        // else{
+        //     Console.WriteLine("Неизвестный оператор");
+        // }
+        // Console.WriteLine("Продолжить? (y/n)");
+        // again = Convert.toChar(Console.ReadLine());
+        // }
+
     }
 }
-
-
-// сhar again = 'y';
-// while(again == 'y');
-// {
-//     double a;
-//     double b;
-//     double result;
-//     char operat;
-
-//     Console.WriteLine("Введите первое число");
-//     a = Convert.ToDouble(Console.ReadLine());
-
-//     Console.WriteLine("Введите оператор");
-//     operat = Convert.ToChar(Console.ReadLine());
-
-//     Console.WriteLine("Введите второе число");
-//     b = Convert.ToDouble(Console.ReadLine());
-
-//     if (operat == '+'){
-//         result = a + b;
-//         Console.WriteLine("Сумма = "+ result +);
-//     }
-//     else if (operat == '-'){
-//         result = a - b;
-//         Console.WriteLine("Разность = "+ result +);
-//     }
-//     else if(operat == '*'){
-//         result = a * b;
-//         Console.WriteLine("Умножение = "+ result +);
-//     }
-//     else if(operat == '/'){
-//         result = a / b;
-//         Console.WriteLine("Деление = "+ result +); 
-//     }
-//     else{
-//         Console.WriteLine("Неизвестный оператор");
-//     }
-//     Console.WriteLine("Продолжить? (y/n)");
-//     again = Convert.toChar(Console.ReadLine());
-// }
