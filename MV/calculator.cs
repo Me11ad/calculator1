@@ -1,26 +1,51 @@
 using System;
-public class Calc{
-    public int Sum(int x, int y){
-        return x + y;
+namespace calculator_c_sharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string value;
+            do
+            {
+                int res;
+                Console.Write("Введите первое знвчение:");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Введите второе значение:");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Введите оператор(/,+,-,*):");
+                string symbol = Console.ReadLine();
+ 
+                switch (symbol)
+                {
+                    case "+":
+                        res = num1 + num2;
+                        Console.WriteLine("Сложение:" + res);
+                        break;
+                    case "-":
+                        res = num1 - num2;
+                        Console.WriteLine("Разность:" + res);
+                        break;
+                    case "*":
+                        res = num1 * num2;
+                        Console.WriteLine("Умножение" + res);
+                        break;
+                    case "/":
+                        res = num1 / num2;
+                        Console.WriteLine("Деление:" + res);
+                        break;
+                    default:
+                        Console.WriteLine("Неверный оператор");
+                        break;
+                }
+                Console.ReadLine();
+                Console.Write("Хотите продолжить?(y/n):");
+                value = Console.ReadLine();
+            }
+            while (value=="y" || value=="Y");
+        }
     }
-
-}
-public class Requestor{
-    Calc calc;
-
-    public Requestor(Calc calc){
-        this.calc = calc;
-    }
-
-    static void Req(){
-    }  
-}
-
-public class Programm{
-    static void Main(string[] args){
-        Calc calc = new();
-        Requestor req = new(calc);
-    }
+ 
 }
 
         // double a;
